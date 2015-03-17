@@ -313,5 +313,5 @@ if (!module.parent) {
 }
 
 var server = http.createServer(requestListener);
-server.listen(3000);
+server.listen(process.env.PORT || 5000);
 
