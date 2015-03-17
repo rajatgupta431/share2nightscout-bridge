@@ -30,7 +30,7 @@ var requestListener = function (req, res) {
   res.writeHead(200);
   
 
-
+res.send("Script running")
 
 
 
