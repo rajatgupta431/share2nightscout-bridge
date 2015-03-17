@@ -25,6 +25,13 @@
 var request = require('request');
 var qs = require('querystring');
 var crypto = require('crypto');
+var http = require('http');
+var requestListener = function (req, res) {
+  res.writeHead(200);
+  
+
+
+
 
 
 // Defaults
@@ -303,4 +310,8 @@ if (!module.parent) {
       break;
   }
 }
+}
+
+var server = http.createServer(requestListener);
+server.listen(3000);
 
