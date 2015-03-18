@@ -32,7 +32,7 @@ var requestListener = function (req, res) {
 
 res.write("Script running");
 
-
+}
 
 // Defaults
 var Defaults = {
@@ -310,7 +310,7 @@ if (!module.parent) {
       break;
   }
 }
-}
+
 
 var server = http.createServer(requestListener);
 server.listen(process.env.PORT || 5000);
